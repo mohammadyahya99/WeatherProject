@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WeatherProject</title>
+  </head>
+  <body>
+    <input id="cityData" type="text" placeholder="Fill City Name :" /><button
+      id="SearchBtn"
+    >
+      Search !
+    </button>
+
+    <div id="cities"></div>
+
+    <script id="cityweather" type="text/x-handlebars-template">
+      {{#each cities}}
+        <div class="cityContainer">
+          {{#if isTemp}}
+            <button class="remember">+</button>
+          {{else}}
+            <button class="remember">-</button>
+          {{/if}}
+          <div class="cityName">{{name}}</div>
+          <div class="temperature">{{temperature}} C</div>
+          <div class="weath">{{condition}}</div>
+          <img class="Pic" src={{conditionPic}} />
+        </div>
+      {{/each}}
+    </script>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/handlebars/dist/handlebars.js"></script>
+    <script src="WeatherApp.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

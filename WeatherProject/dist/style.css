@@ -1,0 +1,57 @@
+body {
+  background-color: #e8f9fd;
+}
+input {
+  width: 60%;
+  height: 30px;
+  margin-left: 15%;
+  border-radius: 10px;
+}
+#SearchBtn {
+  height: 40px;
+  font-size: large;
+  margin-left: 30px;
+}
+
+.cityContainer {
+  border-radius: 20px;
+  background-color: #59ce8f;
+  display: grid;
+  width: 50%;
+  grid-gap: 10px;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  font-size: 25px;
+  margin-left: 270px;
+  margin-top: 30px;
+  padding: 20px;
+  grid-gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button {
+  color: black;
+  font-size: 30px;
+  background-color: #ff1e00;
+  border-radius: 75px;
+}
+.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.cityName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.weath {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.Pic {
+  width: 100px;
+}
